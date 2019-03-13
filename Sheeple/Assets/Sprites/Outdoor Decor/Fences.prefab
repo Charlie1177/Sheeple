@@ -40,7 +40,7 @@ Grid:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8360843354907840436}
   m_Enabled: 1
-  m_CellSize: {x: 1, y: 1, z: 0}
+  m_CellSize: {x: 1, y: 1.5, z: 0}
   m_CellGap: {x: 0, y: 0, z: 0}
   m_CellLayout: 0
   m_CellSwizzle: 0
@@ -85,6 +85,15 @@ Tilemap:
   m_GameObject: {fileID: 9136454456496251936}
   m_Enabled: 1
   m_Tiles:
+  - first: {x: -7, y: -3, z: 0}
+    second:
+      m_TileIndex: 19
+      m_TileSpriteIndex: 19
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_ObjectToInstantiate: {fileID: 0}
+      m_TileFlags: 1
+      m_ColliderType: 1
   - first: {x: -6, y: -3, z: 0}
     second:
       m_TileIndex: 18
@@ -296,6 +305,8 @@ Tilemap:
     m_Data: {fileID: 11400000, guid: 22f03d48c1ac9af468ae5cb6d7850078, type: 2}
   - m_RefCount: 1
     m_Data: {fileID: 11400000, guid: a49f04f2bef814e469141d570efd3081, type: 2}
+  - m_RefCount: 1
+    m_Data: {fileID: 11400000, guid: f05922de50e9c884c929acd321c45052, type: 2}
   m_TileSpriteArray:
   - m_RefCount: 1
     m_Data: {fileID: 0}
@@ -335,8 +346,10 @@ Tilemap:
     m_Data: {fileID: 21300000, guid: 72841dba71ca0c84ea4e69e02d616a5c, type: 3}
   - m_RefCount: 1
     m_Data: {fileID: 21300000, guid: 37006e28af9ae334aa421b304949f8d8, type: 3}
+  - m_RefCount: 1
+    m_Data: {fileID: 21300000, guid: ef8adcc1df90bc54b8e6bbca78b56182, type: 3}
   m_TileMatrixArray:
-  - m_RefCount: 19
+  - m_RefCount: 20
     m_Data:
       e00: 1
       e01: 0
@@ -355,14 +368,14 @@ Tilemap:
       e32: 0
       e33: 1
   m_TileColorArray:
-  - m_RefCount: 16
+  - m_RefCount: 17
     m_Data: {r: 1, g: 1, b: 1, a: 1}
   - m_RefCount: 1
-    m_Data: {r: 0.9368122, g: 0.44235617, b: 0.57362956, a: 1}
+    m_Data: {r: 0.87186426, g: 0.39935166, b: 0.43158114, a: 1}
   - m_RefCount: 1
-    m_Data: {r: 0.88384587, g: 0.56515884, b: 0.6623948, a: 1}
+    m_Data: {r: 0.74471444, g: 0.3056965, b: 0.3299728, a: 1}
   - m_RefCount: 1
-    m_Data: {r: 0.85660005, g: 0.3856922, b: 0.5022383, a: 1}
+    m_Data: {r: 0.8304668, g: 0.39240938, b: 0.52242553, a: 1}
   m_AnimationFrameRate: 1
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Origin: {x: -8, y: -3, z: 0}
