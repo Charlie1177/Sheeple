@@ -2,6 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+// Notes: Speed Variable changes movement speed of Object.
+// Stopping Distance variable changes distance in which moving object stops from target.
+
 public class sheepMove : MonoBehaviour
 {
 
