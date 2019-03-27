@@ -6,6 +6,7 @@ public class AnimalMove : MonoBehaviour
 
     public float speed = 1.5f;
     private Vector3 target;
+    private int moved = 0;
 
     void Start()
     {
@@ -14,11 +15,14 @@ public class AnimalMove : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetMouseButtonDown(0))
         {
-            target = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-            target.z = transform.position.z;
+            if (Input.GetMouseButtonDown(0))
+            {
+                target = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+                target.z = transform.position.z;
+            }
+            transform.position = Vector3.MoveTowards(transform.position, target, speed * Time.deltaTime);
         }
-        transform.position = Vector3.MoveTowards(transform.position, target, speed * Time.deltaTime);
+        
     }
 }
