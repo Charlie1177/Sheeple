@@ -380,10 +380,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spawnPoints:
-  - {fileID: 1608864146}
+  - {fileID: 1410173898}
   enemy: {fileID: 1608864144}
   spawnTime: 2
-  spawnDelay: 2
+  spawnDelay: 10
 --- !u!1 &1608864144
 GameObject:
   m_ObjectHideFlags: 0
