@@ -4,11 +4,8 @@ using UnityEngine.UI;
 
 public class AnimalMove : MonoBehaviour
 {
-    public float health = 100;
-    private float realHealth = 100;
-    [Header("Unity Stuff")]
-    public Image healthbar;
     
+    //spped and other variables
     public float speed = 1.5f;
     private Vector3 target;
     private int moved = 0;
@@ -21,6 +18,7 @@ public class AnimalMove : MonoBehaviour
     void Update()
     {
         {
+            //check if the mouse button has been clicked
             if (Input.GetMouseButtonDown(0))
             {
                 target = Camera.main.ScreenToWorldPoint(Input.mousePosition);
@@ -31,15 +29,5 @@ public class AnimalMove : MonoBehaviour
         }
         
     }
-    void OnTriggerEnter2D(Collider2D col)
-    {
-        if (col.tag == "pain")
-            Debug.Log("Entered");
-        float damage = 15;
-        health = realHealth;
-        health -= damage;
-        realHealth = health;
-        health = health / 100f;
-        healthbar.fillAmount = health;
-    }
+    
 }
