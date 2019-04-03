@@ -9,6 +9,8 @@ public class NPC : MonoBehaviour
     private Transform target;
     private int wavepointIndex = 0;
 
+    
+
     void Start()
     {
         target = Waypoints.points[0];

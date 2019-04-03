@@ -1032,7 +1032,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 30
-  stoppingDistance: 10
+  stoppingDistance: 20
 --- !u!212 &1052005357
 SpriteRenderer:
   m_ObjectHideFlags: 0
