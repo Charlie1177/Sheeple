@@ -2,18 +2,21 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SheepMove : MonoBehaviour
+// Notes: Speed Variable changes movement speed of Object.
+// Stopping Distance variable changes distance in which moving object stops from target.
+
+public class sheepMove : MonoBehaviour
 {
+
     public float speed;
     public float stoppingDistance;
 
     private Transform target;
 
-
     // Start is called before the first frame update
     void Start()
     {
-        target = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
+        target = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>(); 
     }
 
     // Update is called once per frame
@@ -23,6 +26,5 @@ public class SheepMove : MonoBehaviour
         {
             transform.position = Vector2.MoveTowards(transform.position, target.position, speed * Time.deltaTime);
         }
-        
     }
 }
