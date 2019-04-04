@@ -10,6 +10,8 @@ public class AnimalMove : MonoBehaviour
     private Vector3 target;
     private bool moved = false;
     private bool arrived = false;
+    private int kills = 0;
+    public int vanish;
 
     void Start()
     {
@@ -33,5 +35,19 @@ public class AnimalMove : MonoBehaviour
         }
         
     }
+    public void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == "pain")
+        {
+            Destroy(collision.gameObject);
+        }
+        kills++;
+        if(kills == vanish)
+        {
+            Destroy(gameObject);
+        }
+    }
+
     
+
 }
