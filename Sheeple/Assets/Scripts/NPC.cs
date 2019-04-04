@@ -29,7 +29,8 @@ public class NPC : MonoBehaviour
        Vector3 dir = target.position - transform.position;
         if(refClock.GetComponent<Clock>().hours == 7)
         {
-            this.transform.position = new Vector3(90);//set for a place to go to sleep               
+
+            this.transform.Rotate(new Vector3(0, 90, 0));//set for a place to go to sleep               
             //??????????????????????????
         }
        transform.Translate(dir.normalized * speed * Time.deltaTime, Space.World);
