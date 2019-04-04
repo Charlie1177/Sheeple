@@ -28,7 +28,7 @@ public class Money : MonoBehaviour
        
         if (tics >= 1)
         {
-            money++;
+            money += 3;
             moneyCount.text = money.ToString();
             tics = 0;
         }

@@ -7,8 +7,8 @@ public class SheepSpawn : MonoBehaviour
 
     public Transform[] spawnPoints;
     public GameObject sheep;
-    public float spawnTime = 5f;
-    public float spawnDelay = 3f;
+    public float spawnTime = 1f;
+    public float spawnDelay = 0.3f;
 
     // Start is called before the first frame update
     void Start()
