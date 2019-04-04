@@ -6,8 +6,11 @@ using UnityEngine.UI;
 using System;
 
 
+
 public class Clock : MonoBehaviour
 {
+        
+
     public int DateFetcher;
     public int hours;
     public Text Hoursul, Minutestul, Secondsul, Cycle;
