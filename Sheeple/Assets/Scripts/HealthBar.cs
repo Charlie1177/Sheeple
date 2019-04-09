@@ -60,5 +60,19 @@ public class HealthBar : MonoBehaviour
         health = temp;
         //report health final time
         Debug.Log(health);
+
+        if(healthbar.fillAmount == 0)
+        {
+            Quit();
+        }
+    }
+
+    public void Quit()
+    {
+#if UNITY_EDITOR
+        UnityEditor.EditorApplication.isPlaying = false;
+#else
+        Application.Quit();
+#endif
     }
 }
