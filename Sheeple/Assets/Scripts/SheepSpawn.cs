@@ -20,6 +20,8 @@ public class SheepSpawn : MonoBehaviour
     {
         int spawnPointIndex = Random.Range(0, spawnPoints.Length);
 
+        
+
         Instantiate(sheep, spawnPoints[spawnPointIndex].position, spawnPoints[spawnPointIndex].rotation);
     }
 

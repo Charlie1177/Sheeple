@@ -9,13 +9,31 @@ public class HealthBar : MonoBehaviour
     [HideInInspector]
     public float health = 100;
     private float temp;
+    public float regenDelay = .5f;
+    public float regenTime = 4f;
 
     [Header("Unity Stuff")]
     public Image healthbar;
 
     void Start()
     {
-        
+        //begin calling the regen function
+        InvokeRepeating("reigen", regenDelay, regenTime);
+    }
+
+    //regeneration fuction
+    void reigen()
+    {
+        //if health is under 100 then begin to regen health
+        if(health < 100)
+        {
+            //calculations for regen health
+            health = health / 100;
+            health += .1f;
+            health = health * 100;
+            //check final health is back to whole integer
+            Debug.Log(health);
+        }
     }
 
     
