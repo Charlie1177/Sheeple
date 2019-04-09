@@ -6,24 +6,18 @@ using UnityEngine.UI;
 using System;
 
 
-
-public class Clock : MonoBehaviour
+public class Money : MonoBehaviour
 {
-        
-
-    public int DateFetcher;
-    public int hours;
-    public Text Hoursul, Minutestul, Secondsul, Cycle;
+   
+    public int money;
+    public Text moneyCount;
     public float tics;
-    public string apm;
     // Start is called before the first frame update
     void Start()
     {
         tics = 0;
-        hours = 5;
-        apm = "AM";
-        Hoursul.text = hours.ToString();
-        Cycle.text = apm.ToString();
+        money = 0;
+        moneyCount.text = money.ToString();
     }
 
     // Update is called once per frame
@@ -32,14 +26,14 @@ public class Clock : MonoBehaviour
 
         tics = tics + Time.deltaTime;
        
-        if (tics >= 4)
+        if (tics >= 2)
         {
-            hours++;
-            Hoursul.text = hours.ToString();
+            money += 3;
+            moneyCount.text = money.ToString();
             tics = 0;
         }
 
-        if(hours >= 12)
+        /*if(hours >= 12)
         {
             hours = 0;
             if(apm == "AM")
@@ -52,7 +46,7 @@ public class Clock : MonoBehaviour
                 apm = "AM";
                 Cycle.text = apm.ToString();
             }
-        }
+        }*/
 
            //This if or assigning times
         //Hoursul.text = DateFetcher.Hour.ToString();
