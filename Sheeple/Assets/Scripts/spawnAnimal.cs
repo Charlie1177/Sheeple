@@ -21,98 +21,87 @@ public class spawnAnimal : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-        
+        isSelected = false;
+        isEnough = false;
+        smallSpawn = false;
+        medSpawn = false;
+        largeSpawn = false;
     }
 
     // Update is called once per frame
     void Update()
     {
         
-        if(checkMoney.GetComponent<Money>().money < 30 && checkMoney.GetComponent<Money>().money >= 20)
-        {
-            isEnough = true;
-            largeSpawn = false;
-            medSpawn = true;
-            smallSpawn = true;
-            
-        }else if(checkMoney.GetComponent<Money>().money < 20 && checkMoney.GetComponent<Money>().money >= 10)
-        {
-            isEnough = true;
-            largeSpawn = false;
-            medSpawn = false;
-            smallSpawn = true;
-            return;
-
-        }else if(checkMoney.GetComponent<Money>().money < 10)
+        if(checkMoney.GetComponent<Money>().money < 10)
         {
             isEnough = false;
             largeSpawn = false;
             medSpawn = false;
             smallSpawn = false;
-            return;
         }
         else
         {
             isEnough = true;
-            largeSpawn = true;
-            medSpawn = true;
             smallSpawn = true;
+            if (checkMoney.GetComponent<Money>().money > 20)
+                medSpawn = true;
+            if (checkMoney.GetComponent<Money>().money > 30)
+                largeSpawn = true;
         }
-        if (isEnough)
+
+        if (isEnough && isSelected)
         {
 
-            if (isSelected)
+            if (Input.GetMouseButtonDown(0))
             {
+                Vector3 spawnPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+                spawnPosition.z = 1;
+                GameObject objectInstance = Instantiate(objectToSpawn, spawnPosition, Quaternion.Euler(new Vector3(0, 0, 0)));
 
-                if (Input.GetMouseButtonDown(0))
+                switch (objectInstance.name.Substring(0, 4))
                 {
-                
-                    
-                    Vector3 spawnPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-                    spawnPosition.z = 0.0f;
-                    GameObject objectInstance = Instantiate(objectToSpawn, spawnPosition, Quaternion.Euler(new Vector3(0, 0, 0)));
-                    isSelected = false;
-
-                    if (largeSpawn == true)
-                    {
-                        switch (objectInstance.name.Substring(0, 4))
+                    case "cana":
+                        if (smallSpawn)
                         {
-                            case "cana":
-                                updateMoney.GetComponent<Money>().money -= 10;
-                                break;
-                            case "dogS":
-                                updateMoney.GetComponent<Money>().money -= 20;
-                                break;
-                            case "cowS":
-                                updateMoney.GetComponent<Money>().money -= 30;
-                                break;
-
+                            updateMoney.GetComponent<Money>().money -= 10;
+                            //objectInstance = Instantiate(GameObject.Find("canary"), spawnPosition, Quaternion.Euler(new Vector3(0, 0, 0)));
+                            isSelected = false;
                         }
-                    } else if (largeSpawn == false && medSpawn == true)
-                    {
-                        switch (objectInstance.name.Substring(0, 4))
+                        else
+                            DestroyImmediate(objectInstance);
+                        break;
+                    case "dogS":
+                        if (medSpawn)
                         {
-                            case "cana":
-                                updateMoney.GetComponent<Money>().money -= 10;
-                                break;
-                            case "dogS":
-                                updateMoney.GetComponent<Money>().money -= 20;
-                                break;
+                            updateMoney.GetComponent<Money>().money -= 20;
+                            //objectInstance = Instantiate(objectToSpawn, spawnPosition, Quaternion.Euler(new Vector3(0, 0, 0)));
+                            isSelected = false;
                         }
-                    }else if (medSpawn == false && smallSpawn == true){
-                        switch (objectInstance.name.Substring(0, 4))
+                        else
+                            DestroyImmediate(objectInstance);
+                        break;
+                    case "cowS":
+                        if (largeSpawn)
                         {
-                            case "cana":
-                                updateMoney.GetComponent<Money>().money -= 10;
-                                break;
+                            updateMoney.GetComponent<Money>().money -= 30;
+                            //objectInstance = Instantiate(objectToSpawn, spawnPosition, Quaternion.Euler(new Vector3(0, 0, 0)));
+                            isSelected = false;
                         }
-                    }
-                    
+                        else
+                            DestroyImmediate(objectInstance);
+                        break;
                 }
-            
             }
         }
         
+    }
+    private void LateUpdate()
+    {
+        isEnough = false;
+        smallSpawn = false;
+        medSpawn = false;
+        largeSpawn = false;
+
     }
 
     public void Selecting()
