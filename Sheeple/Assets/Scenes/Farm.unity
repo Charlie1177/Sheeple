@@ -2313,8 +2313,8 @@ MonoBehaviour:
   spawnPoints:
   - {fileID: 1051793029}
   sheep: {fileID: 1052005355}
-  spawnTime: 5
-  spawnDelay: 3
+  spawnTime: 1
+  spawnDelay: 1
 --- !u!212 &1051793028
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2409,7 +2409,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4462632466c003b41b2f894860845d3f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
+  speed: 70
   stoppingDistance: 50
 --- !u!212 &1052005357
 SpriteRenderer:
