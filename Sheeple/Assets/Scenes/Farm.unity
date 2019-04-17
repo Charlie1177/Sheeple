@@ -2313,8 +2313,8 @@ MonoBehaviour:
   spawnPoints:
   - {fileID: 1051793029}
   sheep: {fileID: 1052005355}
-  spawnTime: 5
-  spawnDelay: 3
+  spawnTime: 1
+  spawnDelay: 1
 --- !u!212 &1051793028
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2409,8 +2409,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4462632466c003b41b2f894860845d3f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
-  stoppingDistance: 50
+  speed: 70
+  stoppingDistance: 10
 --- !u!212 &1052005357
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2642,10 +2642,10 @@ BoxCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1065342145}
-  m_Enabled: 0
+  m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}

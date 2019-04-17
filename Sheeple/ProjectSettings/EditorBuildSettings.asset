@@ -5,13 +5,13 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
   - enabled: 1
     path: Assets/Scenes/MenuScene.unity
     guid: 05e5bee1a7775214c845d84f7fa9cba8
   - enabled: 1
     path: Assets/Scenes/Farm.unity
-    guid: 6d57530e3e519d343a3191bb175e1d3e
+    guid: e0752d59ea6c35641a85de755a0b2fad
+  - enabled: 1
+    path: Assets/Scenes/GameOver.unity
+    guid: f0da7fcec203633468967074d2192d9d
   m_configObjects: {}
