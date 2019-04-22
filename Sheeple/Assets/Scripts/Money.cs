@@ -16,7 +16,7 @@ public class Money : MonoBehaviour
     void Start()
     {
         tics = 0;
-        money = 0;
+        money = 30;
         moneyCount.text = money.ToString();
     }
 
@@ -28,30 +28,9 @@ public class Money : MonoBehaviour
        
         if (tics >= 2)
         {
-            money += 3;
+            money += 5;
             moneyCount.text = money.ToString();
             tics = 0;
         }
-
-        /*if(hours >= 12)
-        {
-            hours = 0;
-            if(apm == "AM")
-            {
-                apm = "PM";
-                Cycle.text = apm.ToString();
-
-            }else if(apm == "PM"){
-
-                apm = "AM";
-                Cycle.text = apm.ToString();
-            }
-        }*/
-
-           //This if or assigning times
-        //Hoursul.text = DateFetcher.Hour.ToString();
-        //Minutestul.text = DateFetcher.Minute.ToString();
-        //Secondsul.text = DateFetcher.Second.ToString();
-        //print("print:" + DateFetcher);
     }
 }

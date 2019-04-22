@@ -2952,7 +2952,7 @@ GameObject:
   - component: {fileID: 1065342150}
   m_Layer: 0
   m_Name: Farmer
-  m_TagString: Player
+  m_TagString: Farmer
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3034,6 +3034,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 30
   refClock: {fileID: 396739488}
+  whichWaypoint: {fileID: 0}
   farmerSleep: {fileID: 0}
 --- !u!114 &1065342149
 MonoBehaviour:

@@ -9,6 +9,7 @@ public class SheepSpawn : MonoBehaviour
     public GameObject sheep;
     public float spawnTime = 1f;
     public float spawnDelay = 0.3f;
+    //public string whichNPC;
 
     // Start is called before the first frame update
     void Start()
@@ -19,9 +20,7 @@ public class SheepSpawn : MonoBehaviour
     void addSheep()
     {
         int spawnPointIndex = Random.Range(0, spawnPoints.Length);
-
         
-
         Instantiate(sheep, spawnPoints[spawnPointIndex].position, spawnPoints[spawnPointIndex].rotation);
     }
 

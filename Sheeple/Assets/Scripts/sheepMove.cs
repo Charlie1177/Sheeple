@@ -7,16 +7,18 @@ using UnityEngine;
 
 public class sheepMove : MonoBehaviour
 {
-
+    
     public float speed;
     public float stoppingDistance;
+    //public string whichNPC;
+
 
     private Transform target;
 
     // Start is called before the first frame update
     void Start()
     {
-        target = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>(); 
+        target = GameObject.FindGameObjectWithTag("Farmer").GetComponent<Transform>();
     }
 
     // Update is called once per frame
