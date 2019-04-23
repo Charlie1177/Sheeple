@@ -40,14 +40,12 @@ public class AnimalMove : MonoBehaviour
         if (collision.gameObject.tag == "pain")
         {
             Destroy(collision.gameObject);
+            kills++;
         }
-        kills++;
+        
         if(kills == vanish)
         {
             Destroy(gameObject);
         }
     }
-
-    
-
 }

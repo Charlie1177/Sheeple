@@ -16,7 +16,7 @@ public class Money : MonoBehaviour
     void Start()
     {
         tics = 0;
-        money = 75;
+        money = 100;
         moneyCount.text = money.ToString();
     }
 
@@ -26,7 +26,7 @@ public class Money : MonoBehaviour
 
         tics = tics + Time.deltaTime;
        
-        if (tics >= 2)
+        if (tics >= 1)
         {
             money += 5;
             moneyCount.text = money.ToString();

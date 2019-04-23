@@ -46,35 +46,39 @@ public class HealthBar : MonoBehaviour
         Debug.Log(health);
         //checks if object collided with has tag pain
         if(col.tag == "pain")
-        //reports collision
-        Debug.Log("Entered"); 
-        float damage = 15;
-        //caluclate damage
-        health -= damage;
-        //report new health
-        Debug.Log(health);
-        //set temp to health
-        temp = health;
-        //more health calculations and setting healthbar.fillamount to new damage
-        health = health / 100f;
-        healthbar.fillAmount = health;
-        //restore health to nondecimal state
-        health = temp;
-        //report health final time
-        Debug.Log(health);
-        if(health < 50)
         {
-            sleepy.SetActive(true);
-        }
-        else
-        {
-            sleepy.SetActive(false);
-        }
+            //reports collision
+            Debug.Log("Entered"); 
+            float damage = 15;
+            //caluclate damage
+            health -= damage;
+            //report new health
+            Debug.Log(health);
+            //set temp to health
+            temp = health;
+            //more health calculations and setting healthbar.fillamount to new damage
+            health = health / 100f;
+            healthbar.fillAmount = health;
+            //restore health to nondecimal state
+            health = temp;
+            //report health final time
+            Debug.Log(health);
+            if (health < 50)
+            {
+                sleepy.SetActive(true);
+            }
+            else
+            {
+                sleepy.SetActive(false);
+            }
 
-        if(healthbar.fillAmount == 0)
-        {
-            gameOver();
+            if(healthbar.fillAmount == 0)
+            {
+                gameOver();
+            }
         }
+        
+        
     }
 
     public void gameOver()
