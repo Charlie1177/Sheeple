@@ -16,7 +16,7 @@ public class Money : MonoBehaviour
     void Start()
     {
         tics = 0;
-        money = 30;
+        money = 75;
         moneyCount.text = money.ToString();
     }
 

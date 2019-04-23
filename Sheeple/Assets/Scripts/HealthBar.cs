@@ -15,6 +15,7 @@ public class HealthBar : MonoBehaviour
 
     [Header("Unity Stuff")]
     public Image healthbar;
+    public GameObject sleepy;
 
     void Start()
     {
@@ -61,6 +62,14 @@ public class HealthBar : MonoBehaviour
         health = temp;
         //report health final time
         Debug.Log(health);
+        if(health < 50)
+        {
+            sleepy.SetActive(true);
+        }
+        else
+        {
+            sleepy.SetActive(false);
+        }
 
         if(healthbar.fillAmount == 0)
         {
