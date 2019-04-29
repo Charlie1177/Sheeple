@@ -1,0 +1,41 @@
+How does the Core Experience use the tetrad along with our assets.
+
+Players wont suffer through and awful ending, they will suffer through a awful begining.
+Artist mom
+	-Deceased
+	-Artist
+	-City girl captivated by the rural look.
+
+Artist Daughter
+	-Much Like Mother in looks and has a affinity for Art.
+	-Innocent
+Farmer Dad
+	-Cares for his daughter and wants the best for here.
+	-Mid 40s
+	-Meet Wife on a trip to the city.
+The Naive
+	-eccentric
+	-impatient
+	-blunt
+The Wise
+	-collective thinker
+	-other before he
+	
+
+Win Condition: With the Family safe from The Naives's plans, The Farmer and his Daughter can now live in out the rest of their lives as they please. 
+		Though they do not know of you good deeds, you feel proud of you work and continue your work in this world. 
+		
+
+
+City Intro:
+	- With buildings that seem to hold the the sky above the ground, Large Cities are scattered across the land, unlike small, isolated farmes, 
+		the cities harbor a large amount of people, working, traversing, and communicating to other places and people.  
+E.E.
+	
+
+
+CHANGE ON TRELLO
+	-Change scroll bars to buttons
+	-Archive progress bar
+	-Calulate velocity
+	
