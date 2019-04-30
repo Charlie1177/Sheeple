@@ -273,6 +273,7 @@ MonoBehaviour:
   regenTime: 4
   healthbar: {fileID: 1315514974}
   sleepy: {fileID: 1289314587}
+  clockRef: {fileID: 396739490}
 --- !u!114 &114678843
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3306,7 +3307,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 96f80a0f5d8851f42b5b6a61b3f9d2f1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 100
+  speed: 70
   stoppingDistance: 5
 --- !u!212 &779950004
 SpriteRenderer:
@@ -4269,7 +4270,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4462632466c003b41b2f894860845d3f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 100
+  speed: 70
   stoppingDistance: 5
 --- !u!212 &1052005357
 SpriteRenderer:
@@ -4497,6 +4498,7 @@ MonoBehaviour:
   regenTime: 4
   healthbar: {fileID: 1794095434}
   sleepy: {fileID: 259532889}
+  clockRef: {fileID: 396739490}
 --- !u!61 &1065342150
 BoxCollider2D:
   m_ObjectHideFlags: 0
