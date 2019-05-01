@@ -16,6 +16,7 @@ public class HealthBar : MonoBehaviour
     [Header("Unity Stuff")]
     public Image healthbar;
     public GameObject sleepy;
+    public Clock clockRef;
 
     void Start()
     {
@@ -31,7 +32,7 @@ public class HealthBar : MonoBehaviour
         {
             //calculations for regen health
             health = health / 100;
-            health += .1f;
+            health += 0.3f;
             health = health * 100;
             //check final health is back to whole integer
             Debug.Log(health);
@@ -72,10 +73,14 @@ public class HealthBar : MonoBehaviour
                 sleepy.SetActive(false);
             }
 
-            if(healthbar.fillAmount == 0)
+            if(/*clockRef.hours >= 6 && clockRef.hours <= 5 &&  */healthbar.fillAmount == 0)
             {
                 gameOver();
             }
+            /*else if(clockRef.hours >= 12 && clockRef.apm == "PM" && clockRef.hours <= 11 && healthbar.fillAmount == 0)
+            {
+                gameOver();
+            }*/
         }
         
         
