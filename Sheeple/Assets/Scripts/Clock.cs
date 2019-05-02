@@ -34,11 +34,12 @@ public class Clock : MonoBehaviour
 
         tics = tics + Time.deltaTime;
        
-        if (tics >= 4)
+        if (tics >= 1)
         {
             hours++;
             Hoursul.text = hours.ToString();
             tics = 0;
+            i++;
         }
 
         if(hours >= 12)
