@@ -1296,6 +1296,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DateFetcher: 0
   hours: 0
+  i: 0
   Hoursul: {fileID: 1369577127}
   Minutestul: {fileID: 1489944737}
   Secondsul: {fileID: 1607915066}
@@ -4271,8 +4272,8 @@ MonoBehaviour:
   spawnPoints:
   - {fileID: 1051793029}
   sheep: {fileID: 1052005355}
-  spawnTime: 3
-  spawnDelay: 1
+  spawnTime: 1.5
+  spawnDelay: 0.5
 --- !u!212 &1051793028
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4901,8 +4902,8 @@ MonoBehaviour:
   spawnPoints:
   - {fileID: 1093315478}
   sheep: {fileID: 779950000}
-  spawnTime: 3
-  spawnDelay: 2
+  spawnTime: 1.5
+  spawnDelay: 0.5
 --- !u!212 &1093315477
 SpriteRenderer:
   m_ObjectHideFlags: 0
