@@ -576,12 +576,12 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 250595886}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 1081045358}
-  m_RootOrder: 6
+  m_Father: {fileID: 604295637}
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1411,7 +1411,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &604295637
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1430,6 +1430,7 @@ RectTransform:
   - {fileID: 1086376147}
   - {fileID: 693688403}
   - {fileID: 449888838}
+  - {fileID: 250595887}
   m_Father: {fileID: 1081045358}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1624,10 +1625,10 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: With buildings that seem to hold the the sky above the ground, Large Cities
-    are scattered across the land, unlike small, isolated farmes, the cities harbor
-    a large amount of people, working, traversing, and communicating to other places
-    and people.
+  m_Text: With buildings that seem to hold the the sky above the ground, large cities
+    are scattered across the land. Unlike small, isolated farms, the cities harbor
+    a large amount of people that are working, traversing, and communicating to other
+    places and people.
 --- !u!222 &649391426
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2835,7 +2836,6 @@ RectTransform:
   - {fileID: 659990717}
   - {fileID: 1616294829}
   - {fileID: 1129148144}
-  - {fileID: 250595887}
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2935,7 +2935,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1129148144
 RectTransform:
   m_ObjectHideFlags: 0

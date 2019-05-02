@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using System;
+using UnityEngine.SceneManagement;
 
 
 
@@ -12,13 +13,14 @@ public class Clock : MonoBehaviour
         
 
     public int DateFetcher;
-    public int hours;
+    public int hours, i;
     public Text Hoursul, Minutestul, Secondsul, Cycle;
     public float tics;
     public string apm;
     // Start is called before the first frame update
     void Start()
     {
+        i = 0;
         tics = 0;
         hours = 5;
         apm = "AM";
@@ -54,10 +56,10 @@ public class Clock : MonoBehaviour
             }
         }
 
-           //This if or assigning times
-        //Hoursul.text = DateFetcher.Hour.ToString();
-        //Minutestul.text = DateFetcher.Minute.ToString();
-        //Secondsul.text = DateFetcher.Second.ToString();
-        //print("print:" + DateFetcher);
+        if(i == 24)
+        {
+            SceneManager.LoadScene("GameWon");
+        }
+
     }
 }
